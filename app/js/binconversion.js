@@ -13,4 +13,5 @@ function bin(){
 
 
     document.getElementById("resultado").value = decimal;
+    return true;
 }

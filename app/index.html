@@ -11,27 +11,25 @@
             <div class="nav-home">
                 <h1>Conversor</h1>
                 <ul class="menu">
-                    <li><a href="/site">Home</a></li>
-                    <li><a href="/conversor">Conversor</a></li>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/home">Conversor</a></li>
                     <li><a href="/sobre">Sobre</a></li>
                 </ul>
             </div>
 
-
-            <div class="left">
-                <div class="title">
-                    <h2 id="titulo">Conversor de Binário para Decimal</h2>
-                </div>
+            <div class="title">
+                <h2 id="titulo">Conversor De Binário Para Decimal</h2>
             </div>
+            
 
-            <div class="right">
+            <div class="conversion">
 
                 <div class="campo">
                     <div class="subtitle">
                         <label id="bin">Binário:</label>
                     </div>
                     <div class="valores">
-                        <input type="text" class="valor" id="binario-input" onchange="bin()" placeholder="Coloque o binário aqui!"  maxlength="30" required>
+                        <input type="text" class="valor" id="binario-input" onchange="bin()" placeholder="Coloque o binário aqui!"  maxlength="40" required>
                     </div>
                 </div>
                 <div class="campo">
@@ -43,12 +41,12 @@
                     </div>
                 </div>
                 <div class="campo">
-                    <button class="botao" type="button" value="converter" onclick="bin()">Converter</button>
+                    <button class="botao" type="submit" value="converter" onclick="bin()">Converter</button>
                 </div>
             </div>
 
-            <div class="abaixo">
-                <table id="customers">
+            <div class="tabela">
+                <table id="table-equiv">
                     <tr>
                       <th>Tabela de equivalência:</th>
                     </tr>

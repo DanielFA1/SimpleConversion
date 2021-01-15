@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Conversor Binário</title>
+        <link href="css/style.css" rel="stylesheet">
+        <script src="js/binconversion.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="left">
+                <div class="title">
+                    <h2 id="titulo">Conversor de Binário para Decimal</h2>
+                </div>
+            </div>
+
+            <div class="right">
+
+                <div class="campo">
+                    <div class="subtitle">
+                        <label id="bin">Binário:</label>
+                    </div>
+                    <div class="valores">
+                        <input type="text" class="valor" id="binario-input" onchange="bin()" placeholder="Coloque o binário aqui!"  maxlength="30" required>
+                    </div>
+                </div>
+                <div class="campo">
+                    <div class="subtitle">
+                        <label>Decimal:</label>
+                    </div>
+                    <div class="valores">
+                        <input type="text" id="resultado" readonly="">
+                    </div>
+                </div>
+                <div class="campo">
+                    <button class="botao" type="button" value="converter" onclick="bin()">Calcular</button>
+                </div>
+            </div>
+
+            <div class="abaixo">
+                <table id="customers">
+                    <tr>
+                      <th>Tabela de equivalência:</th>
+                    </tr>
+                    <tr>
+                        <th>Binário: &ensp; 0&ensp;1&ensp;10&ensp;11&ensp;100&ensp;101&ensp;110&ensp;111&ensp;1000&ensp;1001&ensp;1010&ensp;1011&ensp;1100&ensp;1101&ensp;1110&ensp;1111</th>
+                    </tr>
+                    <tr>
+                      <th>Decimal: &ensp;0&ensp;1 &ensp;2&emsp;3&emsp; 4 &emsp; 5 &emsp; 6 &emsp; 7&emsp;&emsp;8&emsp;&emsp;9&emsp;&emsp;10 &emsp; 11 &emsp; 12 &emsp; 13 &emsp; 14 &emsp; 15</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </body>
+</html>

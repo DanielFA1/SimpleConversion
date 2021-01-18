@@ -2,29 +2,29 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 } 
 
 body{
-    background-color: #fff;
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    color: #fff;
 }
 
 .container{
     width: 100vw;
-    height: 100vh;
+    height: 900px;
     max-width:100%;
     display: flex;
     flex-direction: column;
-    background: #298989 
+    background: rgb(0, 0, 0);
+    color: #fff;
 }
 
 .nav-home{
-    background-color: #0B3C5D;
+    background-color: #340f7d;
     width: 100%;
-    height: 14%;
+    height: 19%;
     display: flex;
     align-items: center
 }
@@ -34,6 +34,8 @@ body{
     position: relative;
     left: 10%;
     font-size: 38px;
+    font-weight: 600;
+    font-style: italic;
 }
 
 .menu{
@@ -43,8 +45,11 @@ body{
     left: 50%;
 }
 
+.container ul{
+    display: flex;
+}
+
 .menu li{
-    float: left;
     margin-left: 3%;
     
 }
@@ -52,33 +57,27 @@ body{
 .menu li a{
     color:#fff; 
     font-size: 23px;
-    font-weight: 700;
+    font-weight: 400;
     text-decoration: none;
-    padding: 5px 10px;
-    display: block;
+    padding-right: 15px;
 }
 
 .menu li a:hover{
     color: #89dcb0
 }
 
-.nav-home::after{
-    clear: both;
-}
-
 .title {
-    height: 25%;
+    height: 15%;
     width: 40%;
+    margin: 0 auto;
     position: relative;
-    top: 10%;
-    left: 28%
+    top: 5%;
 }
 
 #titulo {
-    font-family: Arial, Helvetica, sans-serif;
     color: #fff;
-    font-size: 40px;
-    font-weight: 700;
+    font-size: 43px;
+    font-weight: 600;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -86,55 +85,57 @@ body{
 }
 
 .conversion {
-    width: 30%;
-    height: 30%;
-    border-radius: 7px;
+    width: 24.5%;
+    height: 800px;
+    background: rgb(0, 0, 0);
+    border: 2px solid #3113a0;
+    border-radius: 5px;
     position: relative;
-    top: 11%;
-    left: 6%;
+    top: 13%;
+    left: 11%;
+}
+
+.subtitle > h2{
+    font-size: 38px;
+    font-weight: 600;
+    margin-top: 7%;
+    position: relative;
+    left: 23%;
 }
 
 .campo label {
-    font-family: sans-serif;
-    font-size: 34px;
-    font-weight: 600;
+    font-size: 32px;
+    font-weight: 500;
     color: #fff;
-    padding: 12px 12px 12px 0;
+    padding: 13px 13px 13px 0;
+    margin-left: 25px;
+    margin-top: 3%;
     display: inline-block;
-
 }
 
 .campo input[type="text"]{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 85%;
     padding: 11px;
-    border: 1px solid #59429d;
+    border: 1px solid #3113a0;
     resize: vertical;
     display: inline-block;
-}
-
-#binario-input{
-    width: 75%;
-    
+    margin-top: 5px;
+    margin-left: 25px;
 }
 
 #resultado {
     cursor: not-allowed;
-    width: 75%;
-
 }
 
 #binario-input:focus {
-    border: 2px solid #59429d;
-}
-
-
-.campo input:focus{
+    border: 3px solid #59429d;
     background: #E0E0F8;
 }
 
 input, button {
-    font-family: sans-serif;
     font-size: 1em;
-    color: #59429d;
+    color: #000000;
     border-radius: 5px;
     outline: none;
 
@@ -142,21 +143,19 @@ input, button {
 
 .botao {
     font-size: 1.6em;
-    background: #3d2d6c;
-    margin-left: 19%;
+    font-weight: 500;
+    background: #3113a0;
+    margin-left: 26%;
     margin-top: 10%;
     color: #ffffff;
     transition: all linear 1s;
     padding: 0.3em 0.8em;
     border: none;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
 }
 
 
 .botao:hover {
-    background: rgba(177, 153, 247, 0.7);
-    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    background: rgba(49, 19, 160, 0.5);
     text-shadow: none;
 }
 
@@ -165,12 +164,31 @@ input, button {
     cursor: pointer;
 }
 
+.frase-center{
+    width: 37%;
+    height: 10%;
+    position: relative;
+    left: 47%;
+    bottom: 27%
+}
+
+
+.frase-center > h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.frase-center > p {
+    font-size: 18px;
+    margin-top: 23px;
+    margin-left: 8px;
+}
 
 .tabela {
     position: relative;
-    bottom: 11%;
-    left: 50%;
-    width: 40%;
+    bottom: 17%;
+    left: 46%;
+    width: 42%;
     height: 30%
 }
 
@@ -180,7 +198,7 @@ input, button {
   }
   
 #table-equiv td, #table-equiv th {
-    border: 1px solid #ddd;
+    border: 1px solid #3113a0;
     padding: 8px;
 }
 
@@ -193,5 +211,17 @@ input, button {
     padding-top: 19px;
     padding-bottom: 12px;
     text-align: left;
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer{
+    height: 100px;
+    background-color: #3113a0;
+    color: #fff;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }

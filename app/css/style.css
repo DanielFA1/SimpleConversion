@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,600&display=swap");
+
 * {
     margin: 0;
     padding: 0;
@@ -11,18 +13,10 @@ body{
     font-family: sans-serif;
 }
 
-.container{
-    width: 100vw;
-    height: 900px;
-    max-width:100%;
-    display: flex;
-    flex-direction: column;
-    background: rgb(0, 0, 0);
-    color: #fff;
-}
+/* nav-home */
 
 .nav-home{
-    background-color: #340f7d;
+    background-color: #25085e;
     width: 100%;
     height: 100px;
     display: flex;
@@ -31,23 +25,20 @@ body{
 }
 
 .nav-home h1{
-    width: auto;
+    width: 49px;
     position: relative;
     left: 10%;
-    font-size: 38px;
+    font-size: 37px;
     font-weight: 600;
     font-style: italic;
 }
 
-.nav-home ul{
-    display: flex;
-}
-
 .menu{
-    list-style: none;
     width: 30%;
+    display: flex;
+    list-style: none;
     position: relative;
-    left: 50%;
+    left: 60%;
 }
 
 .menu li{
@@ -64,7 +55,7 @@ body{
 }
 
 .menu li a:hover{
-    color: #89dcb0
+    color: #9e8cc2
 }
 
 .title {
@@ -73,6 +64,18 @@ body{
     margin: 0 auto;
     position: relative;
     top: 5%;
+}
+
+/* conteudo da pag */
+
+.container{
+    width: 100vw;
+    height: 900px;
+    max-width:100%;
+    display: flex;
+    flex-direction: column;
+    background: rgb(0, 0, 0);
+    color: #fff;
 }
 
 #titulo {
@@ -85,8 +88,8 @@ body{
 }
 
 .conversion {
-    width: 24.5%;
-    height: 650px;
+    width: 25%;
+    height: 630px;
     background: rgb(0, 0, 0);
     border: 2px solid #3113a0;
     border-radius: 5px;
@@ -96,11 +99,11 @@ body{
 }
 
 .subtitle > h2{
-    font-size: 38px;
+    font-size: 45px;
     font-weight: 600;
-    margin-top: 7%;
+    margin-top: 10%;
     position: relative;
-    left: 23%;
+    left: 18%;
 }
 
 .campo label {
@@ -145,12 +148,13 @@ input, button {
     font-size: 1.6em;
     font-weight: 500;
     background: #3113a0;
-    margin-left: 26%;
-    margin-top: 10%;
+    margin-left: 27%;
+    margin-top: 8%;
     color: #ffffff;
     transition: all linear 1s;
     padding: 0.3em 0.8em;
     border: none;
+    cursor: pointer;
 }
 
 
@@ -159,16 +163,28 @@ input, button {
     text-shadow: none;
 }
 
+#SemBinario{
+    width: 320px;
+}
 
-.botao{
-    cursor: pointer;
+#SemBinario p{
+    position: relative;
+    left: 13%;
+    font-style: italic;
+    margin-top: 23px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.hide{
+    display: none;
 }
 
 .frase-center{
     width: 37%;
     height: 10%;
     position: relative;
-    left: 47%;
+    left: 46.5%;
     bottom: 27%
 }
 
@@ -176,12 +192,13 @@ input, button {
 .frase-center > h1{
     font-size: 36px;
     font-weight: 600;
+    text-decoration: underline rgb(49, 19, 160); 
 }
 
 .frase-center > p {
-    font-size: 18px;
+    font-size: 17px;
     margin-top: 23px;
-    margin-left: 8px;
+    margin-left: 7px;
 }
 
 .tabela {
@@ -214,6 +231,8 @@ input, button {
     font-size: 16px;
     font-weight: 400;
 }
+
+/* footer */
 
 .footer{
     height: 100px;

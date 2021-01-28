@@ -1,9 +1,16 @@
 function bin(){
 
-    const valor = document.getElementById('binario-input').value;
+    const valor = document.getElementById('binario-input').value
     
     if(valor.match(/^[0-1]+$/g) === null){
-        return "valor falso"
+        
+        let SemBin = document.getElementById("SemBinario")
+        SemBin.className = ""
+        return
+
+    } else{
+        document.getElementById("SemBinario")
+        SemBinario.className = "hide"
     }
 
     let decimal = 0
@@ -13,5 +20,4 @@ function bin(){
 
 
     document.getElementById("resultado").value = decimal;
-    return true;
 }

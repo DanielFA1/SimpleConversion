@@ -19,5 +19,5 @@ function bin(){
     }
 
 
-    document.getElementById("resultado").value = decimal;
+    document.getElementById("resultado").value = decimal
 }
